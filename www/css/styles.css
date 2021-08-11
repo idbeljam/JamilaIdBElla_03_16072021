@@ -31,16 +31,30 @@ header {
   font-family: "Shrikhand", cursive;
 }
 header img {
-  height: 48%;
+  height: 60%;
 }
 
+.localisation {
+  display: flex;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+  background-color: #eaeaea;
+}
+.localisation i {
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
 .localisation input {
   display: flex;
   border: none;
-  height: 50px;
+  padding-left: 15px;
   background-color: #eaeaea;
-  width: 100%;
-  text-align: center;
+}
+.localisation input::placeholder {
+  color: black;
+  font-size: 16px;
+  font-weight: bold;
 }
 
 /*# sourceMappingURL=styles.css.map */

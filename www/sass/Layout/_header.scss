@@ -11,7 +11,7 @@ header {
     
 
     img {
-        height: 48%;
+        height: 60%;
             
     } 
 
@@ -20,14 +20,34 @@ header {
 }
 
   .localisation {
+    display: flex;
+   
+    height: 50px ;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgb(234,234,234) ;
+
+    i {
+        margin-right: 5px;
+        margin-bottom: 5px;
+       
+    }
 
     input {
     display: flex;
+   
     border: none;
-    height: 50px ;
+    
+    padding-left: 15px;
     background-color: rgb(234,234,234) ;
-    width: 100%;
-    text-align: center;
+
+    &::placeholder {
+        color: black;
+        font-size: 16px;
+        font-weight: bold;
+      }
+    
     }
   }
 
