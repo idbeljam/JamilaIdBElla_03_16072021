@@ -1,0 +1,46 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+h1, h2, p {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  height: 65px;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10px;
+  font-family: "Shrikhand", cursive;
+}
+header img {
+  height: 48%;
+}
+
+.localisation input {
+  display: flex;
+  border: none;
+  height: 50px;
+  background-color: #eaeaea;
+  width: 100%;
+  text-align: center;
+}
+
+/*# sourceMappingURL=styles.css.map */
