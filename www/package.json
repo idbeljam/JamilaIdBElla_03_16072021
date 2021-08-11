@@ -1,0 +1,19 @@
+{
+  "name": "jamilaidbella_03_16072021",
+  "version": "1.0.0",
+  "description": "\"projet-3-sass\"",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/index.scss:./css/styles.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/idbeljam/JamilaIdBElla_03_16072021.git"
+  },
+  "author": "Jam",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/idbeljam/JamilaIdBElla_03_16072021/issues"
+  },
+  "homepage": "https://github.com/idbeljam/JamilaIdBElla_03_16072021#readme"
+}
