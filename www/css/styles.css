@@ -10,7 +10,7 @@ html, body {
   box-sizing: border-box;
 }
 
-h1, h2, p {
+h1, h2, p, h4 {
   padding: 0;
   margin: 0;
 }
@@ -58,6 +58,25 @@ header img {
   color: black;
   font-size: 16px;
   font-weight: bold;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+  height: 200px;
+  color: white;
+  background-color: #353535;
+  line-height: 40px;
+}
+footer h4 {
+  font-family: "Shrikhand", cursive;
+  font-weight: lighter;
+  font-size: 18px;
+}
+footer a {
+  color: white;
+  line-height: 28px;
 }
 
 /*# sourceMappingURL=styles.css.map */
