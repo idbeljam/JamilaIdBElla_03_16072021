@@ -1,0 +1,25 @@
+footer {
+    display: flex;
+    flex-direction: column;
+
+    padding: 25px;
+
+    height: 200px ;
+    color: white;
+    background-color: #353535 ;
+
+    line-height: 40px;
+    
+    h4{
+        font-family: $typo-logo;
+        font-weight: lighter;
+        font-size: 18px;
+
+    }
+
+    a {
+        color: white;
+        line-height: 28px;
+    
+    }
+}
