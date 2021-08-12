@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html, body {
   height: 100%;
   margin: 0;
@@ -58,6 +59,36 @@ header img {
   color: black;
   font-size: 16px;
   font-weight: bold;
+}
+
+.réservation {
+  display: grid;
+  gap: 20px;
+  padding: 40px 20px 50px 20px;
+  height: 285px;
+  background-color: #f6f6f6;
+  text-align: center;
+}
+.réservation h2 {
+  font-size: 24px;
+  font-weight: bold;
+}
+.réservation p {
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.bouton a {
+  display: inline-block;
+  width: auto;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  background: linear-gradient(180deg, #EF74DA 10.42%, #B974EF 100%);
+  border-radius: 25px;
+  padding: 15px;
+  margin-top: 20px;
+  box-shadow: 1px 1px 7px grey;
 }
 
 footer {
