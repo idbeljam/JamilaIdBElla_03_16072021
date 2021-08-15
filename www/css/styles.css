@@ -11,7 +11,7 @@ html, body {
   box-sizing: border-box;
 }
 
-h1, h2, p, h4 {
+h1, h2, p, h4, ul {
   padding: 0;
   margin: 0;
 }
@@ -21,6 +21,10 @@ a {
   color: black;
   margin: 0;
   padding: 0;
+}
+
+li {
+  list-style: none;
 }
 
 header {
@@ -64,14 +68,15 @@ header img {
 .réservation {
   display: grid;
   gap: 20px;
-  padding: 40px 20px 50px 20px;
+  padding: 20px;
   height: 285px;
-  background-color: #f6f6f6;
+  background-color: #F6F6F6;
   text-align: center;
 }
 .réservation h2 {
   font-size: 24px;
   font-weight: bold;
+  margin-top: 20px;
 }
 .réservation p {
   font-size: 18px;
@@ -84,17 +89,56 @@ header img {
   font-size: 16px;
   font-weight: bold;
   color: white;
-  background: linear-gradient(180deg, #EF74DA 10.42%, #B974EF 100%);
+  background: linear-gradient(180deg, #FF79DA 10.42%, #9356DC 100%);
   border-radius: 25px;
   padding: 15px;
   margin-top: 20px;
+  margin-bottom: 30px;
   box-shadow: 1px 1px 7px grey;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  height: 440px;
+  padding: 20px;
+}
+.menu i {
+  color: #eaeaea;
+}
+.menu h2 {
+  margin-top: 30px;
+  margin-bottom: 35px;
+}
+.menu ul {
+  display: grid;
+  gap: 24px;
+}
+.menu li {
+  display: grid;
+  grid-template-columns: 1fr 1fr 6fr;
+  width: 322px;
+  height: 74px;
+  background: #F6F6F6;
+  border-radius: 20px;
+  font-weight: bold;
+  align-items: center;
+}
+.menu li .pastille {
+  display: flex;
+  height: 25px;
+  width: 25px;
+  background: #9356DC;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  color: white;
 }
 
 footer {
   display: flex;
   flex-direction: column;
-  padding: 25px;
+  padding: 20px;
   height: 200px;
   color: white;
   background-color: #353535;

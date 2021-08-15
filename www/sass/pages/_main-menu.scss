@@ -1,0 +1,53 @@
+.menu {
+    display: flex;
+    flex-direction: column;
+    height: 440px;
+
+    padding: $padding-section;
+
+    i{
+        color: $fond-input;
+    }
+
+    h2 {
+        margin-top: 30px;
+        margin-bottom: 35px;
+    }
+
+    ul{
+        display: grid;
+        
+        gap: 24px;
+        
+
+    }
+
+    li{
+        display: grid;
+        
+        grid-template-columns: 1fr 1fr 6fr;
+        width: 322px;
+        height: 74px;
+
+        background: $gris-clair;
+        border-radius: 20px;
+
+        font-weight: bold;
+        align-items: center;
+
+        .pastille {
+            display: flex;
+            height: 25px;
+            width: 25px;
+            background: $couleur-primaire;
+            align-items: center;
+            justify-content: center;
+
+            border-radius: 20px;
+
+            color: white ;
+        }
+
+    }
+
+}
