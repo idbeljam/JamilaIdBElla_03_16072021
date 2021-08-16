@@ -37,6 +37,8 @@
 
         .pastille {
             display: flex;
+            float: right;
+
             height: 25px;
             width: 25px;
             background: $couleur-primaire;
