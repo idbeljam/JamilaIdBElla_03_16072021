@@ -97,6 +97,46 @@ header img {
   box-shadow: 1px 1px 7px grey;
 }
 
+.restaurants {
+  padding: 20px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: #F6F6F6;
+}
+.restaurants h2 {
+  margin-bottom: 25px;
+}
+.restaurants__content {
+  display: grid;
+  row-gap: 20px;
+}
+.restaurants__card {
+  width: 335px;
+  height: 250px;
+  border-radius: 15px;
+  background-color: white;
+}
+.restaurants__card img {
+  width: 336px;
+  height: 173px;
+  object-fit: cover;
+  border-radius: 15px 15px 0 0;
+}
+.restaurants .legend {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 4fr 1fr;
+  padding: 15px;
+}
+.restaurants .legend .titre {
+  display: grid;
+  gap: 5px;
+}
+.restaurants .legend .coeur {
+  font-size: 24px;
+  justify-self: center;
+}
+
 .menu {
   display: flex;
   flex-direction: column;
@@ -154,6 +194,7 @@ header img {
   }
   .menu ul {
     display: flex;
+    gap: 50px;
   }
 }
 footer {

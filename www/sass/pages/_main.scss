@@ -38,5 +38,55 @@
     margin-bottom: 30px;
     box-shadow: 1px 1px 7px grey;
     
-    
+  }
+
+  .restaurants {
+
+    padding: $padding-section;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: $gris-clair;
+
+    h2{
+      margin-bottom: 25px;
+    }
+
+    &__content {
+      display: grid;
+      row-gap: 20px;
+    }
+
+    &__card {
+      width: 335px;
+      height: 250px;
+
+      border-radius: 15px ;
+      background-color: $blanc;
+
+      img {
+        width: 336px;
+        height: 173px;
+        
+        object-fit: cover;
+
+        border-radius: 15px 15px 0 0;
+      }
+    }
+    .legend {
+      display: grid;
+      grid-template-rows: 1fr;
+      grid-template-columns: 4fr 1fr;
+      
+      padding: 15px;
+
+      .titre {
+        display: grid;
+        gap: 5px;
+      }
+
+      .coeur{
+        font-size: 24px;
+        justify-self: center;
+      }
+    }
   }
