@@ -3,6 +3,9 @@
     flex-direction: column;
     height: 440px;
 
+    justify-content: center;
+    align-items: center;
+
     padding: $padding-section;
     padding-left: 27px;
 
@@ -68,6 +71,21 @@
             margin-left: 15px;
         }
 
+    }
+
+}
+
+
+@media only screen and (min-width: 1080px) {
+
+    .menu {
+        height: 270px;
+        
+        ul{
+            display: flex;
+        }
+
+        
     }
 
 }

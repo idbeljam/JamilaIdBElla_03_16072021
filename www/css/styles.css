@@ -101,6 +101,8 @@ header img {
   display: flex;
   flex-direction: column;
   height: 440px;
+  justify-content: center;
+  align-items: center;
   padding: 20px;
   padding-left: 27px;
 }
@@ -146,6 +148,14 @@ header img {
   margin-left: 15px;
 }
 
+@media only screen and (min-width: 1080px) {
+  .menu {
+    height: 270px;
+  }
+  .menu ul {
+    display: flex;
+  }
+}
 footer {
   display: flex;
   flex-direction: column;
