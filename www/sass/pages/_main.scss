@@ -42,10 +42,17 @@
 
   .restaurants {
 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
     padding: $padding-section;
     padding-top: 60px;
     padding-bottom: 60px;
     background-color: $gris-clair;
+
+    
 
     h2{
       margin-bottom: 25px;
@@ -57,14 +64,39 @@
     }
 
     &__card {
+      position: relative;
       width: 335px;
       height: 250px;
 
       border-radius: 15px ;
       background-color: $blanc;
 
+      .btn-nouveau{
+        display: flex;
+      position: absolute;
+      right: 13px;
+      top: 13px;
+      width: 79px;
+      height: 30px;
+
+      background: $couleur-ter;
+      border-radius: 2px;
+
+      font-style: normal;
+      font-weight: bold;
+      font-size: 14px;
+   
+      color: #0E8F70;
+      align-items: center;
+      justify-content: center;
+
+      cursor: pointer;
+
+
+      }
+
       img {
-        width: 336px;
+        width: 335px;
         height: 173px;
         
         object-fit: cover;
@@ -89,4 +121,24 @@
         justify-self: center;
       }
     }
+  }
+
+  @media only screen and (min-width: 1080px) {
+
+    .restaurants__content {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap : 25px;
+
+    }
+
+    .restaurants__card{
+      width: 500px;
+
+      img {
+        width: 500px;
+      }
+    }
+
+
   }

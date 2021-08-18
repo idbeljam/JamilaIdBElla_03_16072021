@@ -2,18 +2,25 @@ html, body {
     height: 100%;
     margin: 0;
     padding: 0;
+    min-width: 370px;
+    max-width: 2000px;
   
     box-sizing: border-box;
   
     font-family: 'Roboto', sans-serif;
   
   }
+
+  body {
+    display: grid;
+    justify-content: center;
+  }
   
   *,*::before, *::after {
     box-sizing: border-box;
   }
   
-  h1, h2, p, h4, ul {
+  h1, h2, h3, p, h4, ul {
     padding: 0;
     margin: 0;
   }

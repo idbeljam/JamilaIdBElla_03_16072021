@@ -3,15 +3,22 @@ html, body {
   height: 100%;
   margin: 0;
   padding: 0;
+  min-width: 370px;
+  max-width: 2000px;
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
+}
+
+body {
+  display: grid;
+  justify-content: center;
 }
 
 *, *::before, *::after {
   box-sizing: border-box;
 }
 
-h1, h2, p, h4, ul {
+h1, h2, h3, p, h4, ul {
   padding: 0;
   margin: 0;
 }
@@ -98,6 +105,10 @@ header img {
 }
 
 .restaurants {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   padding: 20px;
   padding-top: 60px;
   padding-bottom: 60px;
@@ -111,13 +122,31 @@ header img {
   row-gap: 20px;
 }
 .restaurants__card {
+  position: relative;
   width: 335px;
   height: 250px;
   border-radius: 15px;
   background-color: white;
 }
+.restaurants__card .btn-nouveau {
+  display: flex;
+  position: absolute;
+  right: 13px;
+  top: 13px;
+  width: 79px;
+  height: 30px;
+  background: #99E2D0;
+  border-radius: 2px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  color: #0E8F70;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
 .restaurants__card img {
-  width: 336px;
+  width: 335px;
   height: 173px;
   object-fit: cover;
   border-radius: 15px 15px 0 0;
@@ -137,6 +166,20 @@ header img {
   justify-self: center;
 }
 
+@media only screen and (min-width: 1080px) {
+  .restaurants__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+  }
+
+  .restaurants__card {
+    width: 500px;
+  }
+  .restaurants__card img {
+    width: 500px;
+  }
+}
 .menu {
   display: flex;
   flex-direction: column;
@@ -214,6 +257,10 @@ footer h4 {
 footer a {
   color: white;
   line-height: 28px;
+}
+footer .intro {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
 }
 
 /*# sourceMappingURL=styles.css.map */
