@@ -36,7 +36,7 @@
     padding: 15px;
     margin-top: 20px;
     margin-bottom: 30px;
-    box-shadow: 1px 1px 7px grey;
+    @include box-shadow;
     
   }
 
@@ -70,6 +70,8 @@
 
       border-radius: 15px ;
       background-color: $blanc;
+
+      @include box-shadow;
 
       .btn-nouveau{
         display: flex;
