@@ -1,0 +1,148 @@
+.réservation {
+    display: grid;
+    gap: 20px;
+  
+    padding: $padding-section;
+    height: 285px;
+    background-color: $gris-clair ;
+  
+    text-align: center;
+
+
+    h2 {
+        font-size: 24px;
+        font-weight: bold;
+        margin-top: 20px;
+      }
+
+      p {
+        font-size: 18px;
+        font-weight: 300 ;
+      }
+      
+  
+  }
+
+  .bouton a{
+    display: inline-block;
+    width: auto;
+    font-size: 16px;
+    font-weight: bold;
+    color: $blanc;
+  
+    background: linear-gradient(180deg, $couleur-second 10.42%, $couleur-primaire 100%);
+    border-radius: 25px;
+  
+    padding: 15px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    @include box-shadow;
+    
+  }
+
+  .restaurants {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: $padding-section;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: $gris-clair;
+
+    
+
+
+    
+    h2{
+      margin-bottom: 25px;
+    }
+
+    &__content {
+      display: grid;
+      row-gap: 20px;
+    }
+
+    &__card {
+      position: relative;
+      width: 335px;
+      height: 250px;
+
+      border-radius: 15px ;
+      background-color: $blanc;
+
+      @include box-shadow;
+
+      .btn-nouveau{
+        display: flex;
+      position: absolute;
+      right: 13px;
+      top: 13px;
+      width: 79px;
+      height: 30px;
+
+      background: $couleur-ter;
+      border-radius: 2px;
+
+      font-style: normal;
+      font-weight: bold;
+      font-size: 14px;
+   
+      color: #0E8F70;
+      align-items: center;
+      justify-content: center;
+
+      cursor: pointer;
+
+
+      }
+
+      img {
+        width: 335px;
+        height: 173px;
+        
+        object-fit: cover;
+
+        border-radius: 15px 15px 0 0;
+      }
+    }
+    .legend {
+      display: grid;
+      grid-template-rows: 1fr;
+      grid-template-columns: 4fr 1fr;
+      
+      padding: 15px;
+
+      .titre {
+        display: grid;
+        gap: 5px;
+      }
+
+      .coeur{
+        font-size: 24px;
+        justify-self: center;
+      }
+    }
+  }
+
+  @media only screen and (min-width: 1080px) {
+
+    .restaurants__content {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap : 25px;
+
+    }
+
+    .restaurants__card{
+      width: 500px;
+
+      img {
+        width: 500px;
+      }
+    }
+
+
+  }

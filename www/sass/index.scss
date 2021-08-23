@@ -1,9 +1,14 @@
 
 @import"./base/reset";
 @import"./utils/variables";
+@import"./Utils/mixins";
 
 
 @import"./Layout/header";
+
+@import"./pages/main";
+@import"./pages/main-menu";
+
 
 
 @import"./Layout/footer";
