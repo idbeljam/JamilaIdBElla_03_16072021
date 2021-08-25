@@ -1,3 +1,54 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-width: 370px;
+  max-width: 2000px;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
 
+body {
+  display: grid;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+h1, h2, h3, p, h4, ul {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+.contener {
+  height: 500px;
+  background-image: url("/images/restaurants/palette-gout.jpg ");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-y: top;
+  padding-top: 220px;
+}
+.contener .menus {
+  background-color: #F6F6F6;
+  padding: 30px 17px;
+  border-radius: 40px 40px 0 0;
+}
+.contener .menus h1 {
+  font-family: "Shrikhand", cursive;
+}
 
 /*# sourceMappingURL=restaurants.css.map */
