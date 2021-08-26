@@ -44,6 +44,11 @@ header {
   font-family: "Shrikhand", cursive;
   box-shadow: 0px 1px 10px grey;
 }
+header a {
+  position: absolute;
+  top: 26px;
+  left: 23px;
+}
 header img {
   height: 60%;
 }

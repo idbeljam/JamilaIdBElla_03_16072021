@@ -24,7 +24,8 @@
 
         &__entete {
             display: grid;
-            grid-template-columns: auto 1fr;
+            grid-template-columns: 4fr 1fr;
+            
          
 
             h1 {
@@ -49,6 +50,11 @@
     .entrees, .plats, .dessert {
         display: grid;
         row-gap: 20px;
+        
+        &__content {
+            display: grid;
+            row-gap: 20px;
+        }
 
 
     }
@@ -96,3 +102,18 @@
     
 }
 
+@media only screen and (min-width: 768px) {
+
+    .entrees__content, .plats__content, .dessert__content {
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 20px;
+    
+    }
+
+    .card-plat {
+      min-height: 100px;
+    }
+
+
+}

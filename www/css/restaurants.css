@@ -51,7 +51,7 @@ li {
 }
 .contener .menus__entete {
   display: grid;
-  grid-template-columns: auto 1fr;
+  grid-template-columns: 4fr 1fr;
 }
 .contener .menus__entete h1 {
   font-family: "Shrikhand", cursive;
@@ -69,6 +69,10 @@ li {
   font-weight: lighter;
 }
 .contener .menus .entrees, .contener .menus .plats, .contener .menus .dessert {
+  display: grid;
+  row-gap: 20px;
+}
+.contener .menus .entrees__content, .contener .menus .plats__content, .contener .menus .dessert__content {
   display: grid;
   row-gap: 20px;
 }
@@ -98,6 +102,18 @@ li {
 .contener .bouton a {
   padding-left: 50px;
   padding-right: 50px;
+}
+
+@media only screen and (min-width: 768px) {
+  .entrees__content, .plats__content, .dessert__content {
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+  }
+
+  .card-plat {
+    min-height: 100px;
+  }
 }
 
 /*# sourceMappingURL=restaurants.css.map */
