@@ -222,7 +222,6 @@ header img {
   box-shadow: 5px 6px 8px #8a8989;
 }
 .menu li:hover {
-  color: #9356DC;
   background-color: #e9ddf8;
 }
 .menu li:hover i {

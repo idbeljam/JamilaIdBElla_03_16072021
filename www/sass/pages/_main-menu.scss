@@ -44,7 +44,6 @@
         @include box-shadow;
 
         &:hover {
-            color: $couleur-primaire ;
             background-color: lighten($couleur-primaire , 32%);
             
 
