@@ -42,6 +42,18 @@
         align-items: center;
 
         @include box-shadow;
+
+        &:hover {
+            color: $couleur-primaire ;
+            background-color: lighten($couleur-primaire , 32%);
+            
+
+            i{
+                color: $couleur-primaire ;
+            }
+        }
+
+
        
 
         .pastille {
