@@ -217,6 +217,7 @@ header img {
   font-weight: bold;
   align-items: center;
   box-shadow: 0px 4px 10px #C4C4C4;
+  transition: background-color 300ms;
 }
 .menu li:hover {
   box-shadow: 5px 6px 8px #8a8989;

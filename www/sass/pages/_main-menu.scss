@@ -43,6 +43,8 @@
 
         @include box-shadow;
 
+        transition: background-color 300ms;
+
         &:hover {
             background-color: lighten($couleur-primaire , 32%);
             
