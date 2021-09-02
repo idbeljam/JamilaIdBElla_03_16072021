@@ -76,6 +76,10 @@ li {
   display: grid;
   row-gap: 20px;
 }
+.contener .menus .blocs-menu {
+  display: grid;
+  gap: 25px;
+}
 .contener .menus .card-plat {
   display: grid;
   height: 70px;
@@ -104,11 +108,9 @@ li {
   padding-right: 50px;
 }
 
-@media only screen and (min-width: 768px) {
-  .entrees__content, .plats__content, .dessert__content {
-    grid-template-rows: 1fr;
+@media only screen and (min-width: 990px) {
+  .blocs-menu {
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 20px;
   }
 
   .card-plat {
