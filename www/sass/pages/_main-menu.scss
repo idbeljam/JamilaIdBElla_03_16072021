@@ -36,7 +36,7 @@
         border-radius: 20px;
 
         padding: 28px;
-        
+        z-index: 1;
 
         font-weight: bold;
         align-items: center;
@@ -46,13 +46,36 @@
         transition: background-color 300ms;
 
         &:hover {
-            background-color: lighten($couleur-primaire , 32%);
-            
+            &::after {
+                opacity: 1;
 
-            i{
-                color: $couleur-primaire ;
+                i{
+                    opacity: 1;
+                };
+               
             }
+
+            
         }
+        
+        &::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            border-radius: 20px;
+            background-color: lighten($couleur-primaire , 32%);
+            opacity: 0;
+            z-index: -1;
+            transition: opacity 250ms;
+
+            i {
+                color: red;
+            }
+
+        }   
 
 
        
