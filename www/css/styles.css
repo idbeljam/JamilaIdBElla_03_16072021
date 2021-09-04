@@ -226,9 +226,6 @@ header img {
 .menu li:hover::after {
   opacity: 1;
 }
-.menu li:hover::after i {
-  opacity: 1;
-}
 .menu li::after {
   content: "";
   position: absolute;
