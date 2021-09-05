@@ -33,6 +33,16 @@ li {
   list-style: none;
 }
 
+@keyframes apparition {
+  0% {
+    transform: translateX(-9999px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
 .contener {
   display: grid;
   background-image: url("/images/restaurants/palette-gout.jpg");
@@ -75,6 +85,18 @@ li {
 .contener .menus .entrees__content, .contener .menus .plats__content, .contener .menus .dessert__content {
   display: grid;
   row-gap: 20px;
+}
+.contener .menus .entrees {
+  animation: apparition 1000ms 1000ms forwards;
+  opacity: 0;
+}
+.contener .menus .plats {
+  animation: apparition 1000ms 2000ms forwards;
+  opacity: 0;
+}
+.contener .menus .dessert {
+  animation: apparition 1000ms 3000ms forwards;
+  opacity: 0;
 }
 .contener .menus .blocs-menu {
   display: grid;
