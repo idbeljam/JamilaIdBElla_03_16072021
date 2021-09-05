@@ -12,6 +12,14 @@ html, body {
 body {
   display: grid;
   justify-content: center;
+  height: 100vh;
+}
+
+.loader {
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  position: absolute;
 }
 
 *, *::before, *::after {
@@ -70,6 +78,30 @@ header img {
   color: black;
   font-size: 16px;
   font-weight: bold;
+}
+
+body .loader {
+  display: flex;
+  background-color: white;
+  position: absolute;
+  z-index: 2;
+  justify-content: center;
+}
+body .loader .spinner {
+  border-top: solid 5px #FF79DA;
+  border-right: solid 5px #9356DC;
+  border-bottom: solid 5px #FF79DA;
+  border-left: solid 5px #9356DC;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  position: absolute;
+  align-self: center;
+  z-index: 3;
+}
+
+header, .localisation, main, footer {
+  opacity: 0;
 }
 
 .réservation {
