@@ -1,0 +1,140 @@
+@import"./base/reset";
+@import"./Utils/variables";
+@import"./Utils/mixins";
+@import"./Utils/animations";
+
+.contener {
+
+    display: grid;
+    background-image: url('../images/restaurants/palette-gout.jpg');
+    background-position: left ;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-y: top;
+    padding-top: 220px;
+   
+    
+    .menus {
+        display: grid;
+        row-gap: 35px;
+       background-color: $gris-clair ;
+     
+        padding: 30px 17px;
+
+        border-radius: 40px 40px 0 0;
+
+        &__entete {
+            display: grid;
+            grid-template-columns: 4fr 1fr;
+            
+         
+
+            h1 {
+                        font-family: $typo-logo ;
+                        font-weight: 400 ;
+                        font-size: 28px; 
+
+                    }
+            .coeur {
+                justify-self: center;
+                align-self: center;
+                font-size: 25px;
+                font-weight: 100;
+            }
+        }
+
+    h2 {
+        font-size: 16px;
+        font-weight: lighter;
+    }
+
+    .entrees, .plats, .dessert {
+        display: grid;
+        row-gap: 20px;
+        
+        &__content {
+            display: grid;
+            row-gap: 20px;
+        }
+
+
+    }
+
+    .entrees {
+        animation: apparition 1000ms 1000ms forwards;
+        opacity: 0;
+    }
+ 
+    .plats {
+        animation: apparition 1000ms 2000ms forwards;
+        opacity: 0;
+    }
+
+    .dessert {
+        animation: apparition 1000ms 3000ms forwards;
+        opacity: 0;
+    }
+
+
+    .blocs-menu {
+        display: grid;
+        gap: 25px;
+    }
+
+    .card-plat{
+        display: grid;
+        height: 70px ;
+        padding: 12px;
+
+        background-color: white;
+        border-radius: 15px;
+        @include box-shadow;
+
+        h4 {
+            font-size: 18px;
+        }
+
+        .legend {
+            display: flex;
+            justify-content: space-between;
+            font-size: 15px;
+            align-self: flex-end;
+
+            & p:nth-child(2){
+                font-weight: bold;
+            }
+        }
+}
+
+
+        
+    }
+
+    .bouton {
+        justify-self: center;
+     
+
+        a {
+            padding-left: 50px;
+            padding-right: 50px;
+        }
+
+    }
+    
+    
+}
+
+@media only screen and (min-width: 990px) {
+
+    .blocs-menu {
+        
+        grid-template-columns: 1fr  1fr 1fr;
+        
+    }
+
+    .card-plat {
+      min-height: 100px;
+    }
+
+
+}
