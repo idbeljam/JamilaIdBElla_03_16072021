@@ -14,7 +14,17 @@ html, body {
 
   body {
     display: grid;
+
+    justify-content: center;
+    height: 100vh;
+    
+  }
   
+  .loader {
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    position: absolute;
   }
   
   *,*::before, *::after {
