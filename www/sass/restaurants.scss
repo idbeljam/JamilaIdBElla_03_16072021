@@ -44,8 +44,19 @@
         }
 
     h2 {
+        position: relative;
         font-size: 16px;
         font-weight: lighter;
+
+        &::before {
+            position: absolute;
+            top : 25px;
+            content: "";
+            height: 3px;
+            width: 40px;
+            background-color: $couleur-ter ;
+
+        }
     }
 
     .entrees, .plats, .dessert {
@@ -60,20 +71,20 @@
 
     }
 
-    .entrees {
-        animation: apparition 1000ms 1000ms forwards;
-        opacity: 0;
-    }
+    // .entrees {
+    //     animation: apparition 1000ms 1000ms forwards;
+    //     opacity: 0;
+    // }
  
-    .plats {
-        animation: apparition 1000ms 2000ms forwards;
-        opacity: 0;
-    }
+    // .plats {
+    //     animation: apparition 1000ms 2000ms forwards;
+    //     opacity: 0;
+    // }
 
-    .dessert {
-        animation: apparition 1000ms 3000ms forwards;
-        opacity: 0;
-    }
+    // .dessert {
+    //     animation: apparition 1000ms 3000ms forwards;
+    //     opacity: 0;
+    // }
 
 
     .blocs-menu {
@@ -85,10 +96,13 @@
         display: grid;
         height: 70px ;
         padding: 12px;
+        position: relative;
 
         background-color: white;
         border-radius: 15px;
         @include box-shadow;
+
+        
 
         h4 {
             font-size: 18px;
@@ -104,11 +118,21 @@
                 font-weight: bold;
             }
         }
-}
-
-
         
+        &::after {
+            content: url("/www/images/restaurants/check-circle-solid.svg");
+            position: absolute;
+            right: 0;
+            background-color: $couleur-ter ;
+            height: 100%;
+            width: 18%;
+            border-radius: 0 15px 15px 0;
+            display: grid;
+        }
+        
+}   
     }
+
 
     .bouton {
         justify-self: center;

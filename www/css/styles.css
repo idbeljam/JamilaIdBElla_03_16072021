@@ -109,10 +109,6 @@ body .loader .spinner {
   z-index: 1000;
 }
 
-header, .localisation, main, footer {
-  opacity: 0;
-}
-
 .réservation {
   display: grid;
   gap: 20px;

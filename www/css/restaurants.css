@@ -44,11 +44,9 @@ li {
 
 @keyframes apparition {
   0% {
-    transform: translateX(-9999px);
     opacity: 0;
   }
   100% {
-    transform: translateX(0);
     opacity: 1;
   }
 }
@@ -84,8 +82,17 @@ li {
   font-weight: 100;
 }
 .contener .menus h2 {
+  position: relative;
   font-size: 16px;
   font-weight: lighter;
+}
+.contener .menus h2::before {
+  position: absolute;
+  top: 25px;
+  content: "";
+  height: 3px;
+  width: 40px;
+  background-color: #99E2D0;
 }
 .contener .menus .entrees, .contener .menus .plats, .contener .menus .dessert {
   display: grid;
@@ -95,18 +102,6 @@ li {
   display: grid;
   row-gap: 20px;
 }
-.contener .menus .entrees {
-  animation: apparition 1000ms 1000ms forwards;
-  opacity: 0;
-}
-.contener .menus .plats {
-  animation: apparition 1000ms 2000ms forwards;
-  opacity: 0;
-}
-.contener .menus .dessert {
-  animation: apparition 1000ms 3000ms forwards;
-  opacity: 0;
-}
 .contener .menus .blocs-menu {
   display: grid;
   gap: 25px;
@@ -115,6 +110,7 @@ li {
   display: grid;
   height: 70px;
   padding: 12px;
+  position: relative;
   background-color: white;
   border-radius: 15px;
   box-shadow: 0px 4px 10px #C4C4C4;
@@ -133,6 +129,16 @@ li {
 }
 .contener .menus .card-plat .legend p:nth-child(2) {
   font-weight: bold;
+}
+.contener .menus .card-plat::after {
+  content: url("/www/images/restaurants/check-circle-solid.svg");
+  position: absolute;
+  right: 0;
+  background-color: #99E2D0;
+  height: 100%;
+  width: 18%;
+  border-radius: 0 15px 15px 0;
+  display: grid;
 }
 .contener .bouton {
   justify-self: center;
