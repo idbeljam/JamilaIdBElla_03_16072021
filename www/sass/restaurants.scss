@@ -100,10 +100,30 @@
 
         background-color: white;
         border-radius: 15px;
-        @include box-shadow;
+        cursor: pointer;
+        
+        
+        @include box-shadow; 
+        
+       
+        &:hover > .check {
+            transform: scaleX(1);
+        }
+        
+        &:hover > .card-content {
+            transform:scaleX(0.8) 
+        }
+
+        .card-content{
+            display: grid;
+            transform: scaleX(1);
+            transition: 500ms;
+            transform-origin: left;
+        }
+
+        }
 
         
-
         h4 {
             font-size: 18px;
         }
@@ -113,14 +133,18 @@
             justify-content: space-between;
             font-size: 15px;
             align-self: flex-end;
+            white-space: nowrap;
 
             & p:nth-child(2){
                 font-weight: bold;
+
+
             }
+
+
         }
-        
-        &::after {
-            content: url("/www/images/restaurants/check-circle-solid.svg");
+
+         .check {
             position: absolute;
             right: 0;
             background-color: $couleur-ter ;
@@ -128,7 +152,21 @@
             width: 18%;
             border-radius: 0 15px 15px 0;
             display: grid;
-        }
+            align-content : center;
+            justify-content: center;
+            transform: scaleX(0);
+            transform-origin: right;
+            transition: 500ms;
+
+
+
+            i {
+                color: white;
+                font-size: 22px;
+                            
+            }
+   
+         
         
 }   
     }

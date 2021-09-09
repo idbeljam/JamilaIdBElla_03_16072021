@@ -113,25 +113,38 @@ li {
   position: relative;
   background-color: white;
   border-radius: 15px;
+  cursor: pointer;
   box-shadow: 0px 4px 10px #C4C4C4;
 }
 .contener .menus .card-plat:hover {
   box-shadow: 5px 6px 8px #8a8989;
 }
-.contener .menus .card-plat h4 {
+.contener .menus .card-plat:hover > .check {
+  transform: scaleX(1);
+}
+.contener .menus .card-plat:hover > .card-content {
+  transform: scaleX(0.8);
+}
+.contener .menus .card-plat .card-content {
+  display: grid;
+  transform: scaleX(1);
+  transition: 500ms;
+  transform-origin: left;
+}
+.contener .menus h4 {
   font-size: 18px;
 }
-.contener .menus .card-plat .legend {
+.contener .menus .legend {
   display: flex;
   justify-content: space-between;
   font-size: 15px;
   align-self: flex-end;
+  white-space: nowrap;
 }
-.contener .menus .card-plat .legend p:nth-child(2) {
+.contener .menus .legend p:nth-child(2) {
   font-weight: bold;
 }
-.contener .menus .card-plat::after {
-  content: url("/www/images/restaurants/check-circle-solid.svg");
+.contener .menus .check {
   position: absolute;
   right: 0;
   background-color: #99E2D0;
@@ -139,6 +152,15 @@ li {
   width: 18%;
   border-radius: 0 15px 15px 0;
   display: grid;
+  align-content: center;
+  justify-content: center;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: 500ms;
+}
+.contener .menus .check i {
+  color: white;
+  font-size: 22px;
 }
 .contener .bouton {
   justify-self: center;
