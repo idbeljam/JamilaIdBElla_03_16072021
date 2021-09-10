@@ -11,6 +11,15 @@ html, body {
 
 body {
   display: grid;
+  justify-content: center;
+  height: 100vh;
+}
+
+.loader {
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  position: absolute;
 }
 
 *, *::before, *::after {
@@ -109,6 +118,9 @@ li {
   background-color: white;
   border-radius: 15px;
   box-shadow: 0px 4px 10px #C4C4C4;
+}
+.contener .menus .card-plat:hover {
+  box-shadow: 5px 6px 8px #8a8989;
 }
 .contener .menus .card-plat h4 {
   font-size: 18px;
