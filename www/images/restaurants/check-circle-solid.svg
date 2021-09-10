@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
+   sodipodi:docname="check-circle-solid.svg"
+   id="svg4"
+   version="1.1"
+   viewBox="0 0 512 512"
+   role="img"
+   class="svg-inline--fa fa-check-circle fa-w-16"
+   data-icon="check-circle"
+   data-prefix="fas"
+   focusable="false"
+   aria-hidden="true">
+  <metadata
+     id="metadata10">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs8" />
+  <sodipodi:namedview
+     inkscape:current-layer="svg4"
+     inkscape:window-maximized="1"
+     inkscape:window-y="-8"
+     inkscape:window-x="-8"
+     inkscape:cy="294.06691"
+     inkscape:cx="256"
+     inkscape:zoom="1.0507812"
+     showgrid="false"
+     id="namedview6"
+     inkscape:window-height="705"
+     inkscape:window-width="1366"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0"
+     guidetolerance="10"
+     gridtolerance="10"
+     objecttolerance="10"
+     borderopacity="1"
+     bordercolor="#666666"
+     pagecolor="#ffffff" />
+  <path
+     style="fill:#ff0000;stroke-width:0.376424"
+     id="path2"
+     d="m 194.70632,101.35315 c 0,51.55768 -41.79549,93.35317 -93.35317,93.35317 C 49.79549,194.70632 8,152.91083 8,101.35315 8,49.79549 49.79549,8 101.35315,8 c 51.55768,0 93.35317,41.79549 93.35317,93.35315 z M 90.55506,150.7829 159.81709,81.520877 c 2.35189,-2.351891 2.35189,-6.165439 0,-8.517343 l -8.51735,-8.517343 c -2.3519,-2.352274 -6.16546,-2.352274 -8.51773,0 L 86.296196,120.97162 59.924308,94.599736 c -2.351897,-2.351897 -6.16545,-2.351897 -8.517724,0 l -8.517346,8.517354 c -2.351898,2.35189 -2.351898,6.16545 0,8.51735 l 39.1481,39.14809 c 2.35227,2.35228 6.165446,2.35228 8.517722,3.7e-4 z"
+     fill="currentColor" />
+</svg>
