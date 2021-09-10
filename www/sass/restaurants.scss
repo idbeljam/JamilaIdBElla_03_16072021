@@ -71,32 +71,37 @@
 
     }
 
-    // .entrees {
-    //     animation: apparition 1000ms 1000ms forwards;
-    //     opacity: 0;
-    // }
+    .entrees {
+        animation: apparition 1000ms 1000ms forwards;
+        opacity: 0;
+    }
  
-    // .plats {
-    //     animation: apparition 1000ms 2000ms forwards;
-    //     opacity: 0;
-    // }
+    .plats {
+        animation: apparition 1000ms 2000ms forwards;
+        opacity: 0;
+    }
 
-    // .dessert {
-    //     animation: apparition 1000ms 3000ms forwards;
-    //     opacity: 0;
-    // }
+    .dessert {
+        animation: apparition 1000ms 3000ms forwards;
+        opacity: 0;
+    }
 
 
     .blocs-menu {
         display: grid;
         gap: 25px;
+        padding: 20px;
+        height: 100%;
     }
 
     .card-plat{
-        display: grid;
+        display: flex;
         height: 70px ;
+        width: 347px; ;
         padding: 12px;
         position: relative;
+
+        overflow: hidden;
 
         background-color: white;
         border-radius: 15px;
@@ -105,70 +110,93 @@
         
         @include box-shadow; 
         
-       
-        &:hover > .check {
-            transform: scaleX(1);
-        }
-        
         &:hover > .card-content {
-            transform:scaleX(0.8) 
+            flex: 0 0 70%;
         }
 
-        .card-content{
-            display: grid;
-            transform: scaleX(1);
-            transition: 500ms;
-            transform-origin: left;
+        &:hover > .card-price {
+            flex: 0 0 15%;
         }
 
-        }
-
-        
-        h4 {
-            font-size: 18px;
-        }
-
-        .legend {
-            display: flex;
-            justify-content: space-between;
-            font-size: 15px;
-            align-self: flex-end;
-            white-space: nowrap;
-
-            & p:nth-child(2){
-                font-weight: bold;
-
-
-            }
-
-
-        }
-
-         .check {
-            position: absolute;
-            right: 0;
-            background-color: $couleur-ter ;
-            height: 100%;
-            width: 18%;
-            border-radius: 0 15px 15px 0;
-            display: grid;
-            align-content : center;
-            justify-content: center;
-            transform: scaleX(0);
-            transform-origin: right;
-            transition: 500ms;
-
-
-
+        &:hover > .card-icon {
+            transform: translateX(0%);
             i {
-                color: white;
-                font-size: 22px;
-                            
+                transform: rotate(360deg);
             }
+        }
+
    
-         
+
+      
         
-}   
+            .card-content{
+                display: grid;
+                gap: 5px;
+        
+                flex: 1 1 85%;
+                
+                transition: flex 500ms linear;
+                
+            }
+        
+                
+                h4 {
+                    font-size: 18px;
+                }
+        
+                h4, p {
+                    padding: 0;
+                    margin: 0;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    max-width: 100%;
+                }
+        
+        
+                .card-price {
+                    display: grid;
+                    align-items: end;
+                    justify-items: start;
+                    padding: 5px;
+        
+                    font-weight: bold;
+                  
+                    transition: flex 500ms linear;
+                }
+
+                .card-icon {
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    width: 18%;
+                    height: 100%;
+                    z-index: 10;
+            
+                    background-color: $couleur-ter ;
+            
+                    border-radius: 0 15px 15px 0;
+                    display: grid;
+                    place-items: center;
+                    
+                    transform: translateX(100%);
+                    transition: transform 500ms linear;
+            
+                    i {
+                        color: white;
+                        font-size: 22px;
+                        
+                        transition: transform 500ms ;
+                                    
+                    }   
+    }
+
+
+
+        
+            
+        }   
+
     }
 
 
