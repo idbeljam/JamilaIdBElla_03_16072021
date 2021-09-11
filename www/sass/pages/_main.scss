@@ -2,41 +2,51 @@
 body{
 
   .loader {
-    // display: flex;
-    // background-color: white;
-    // position: absolute;
-    // z-index: 2;
-    // justify-content: center;
-    // position: absolute;
+    display: flex;
+    background-color: white;
+    position: absolute;
+    z-index: 2;
+    justify-content: center;
+    position: absolute;
     position: fixed;
     width: 100%;
     height: 100%;
     display: flex;
-    justify-content: center;
     align-items: center;
     z-index: 999;
-    background: black;
-    visibility: hidden;
+    background: rgba(255, 255, 255, 0.9);
+    animation: disparition 3000ms forwards;
+    
   
 
     .spinner {
+      display: flex;
       border-top : solid 5px $couleur-second;
       border-right : solid 5px $couleur-primaire;
-      border-bottom : solid 5px $couleur-second;
-      border-left : solid 5px $couleur-primaire;
-      height: 100px;
-      width: 100px;
+      border-bottom : solid 5px $couleur-ter;
+      border-left : solid 5px black;
+      height: 250px;
+      width: 250px;
       border-radius: 50%;
-     
-      align-self: center;
-      z-index: 1000;
+   
+      font-family: $typo-logo;
+      align-content: center;
+      justify-content: center;
+      animation: spin 2500ms linear ;
+
+      .logo-loader {
+        display: flex;
+        align-items: center;
+        
+      }
     }
   }
 
 }
 
 header, .localisation, main, footer {
-  // opacity: 0;
+  opacity: 1;
+  animation: apparation-2 2000ms;
   
 }
 
