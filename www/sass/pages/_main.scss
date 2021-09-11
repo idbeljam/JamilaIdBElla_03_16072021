@@ -167,6 +167,26 @@ header, .localisation, main, footer {
       .coeur{
         font-size: 24px;
         justify-self: center;
+        width: 24px;
+        height: 24px;
+
+        path {
+          fill: transparent;
+          stroke: black;
+          stroke-width: 30;
+          transform-origin: bottom;
+      
+         
+          
+          &:hover{
+            fill: $couleur-second;
+            stroke:$couleur-second ;
+            transition: 1000ms;
+
+           
+          }
+          
+        }
       }
     }
   }
