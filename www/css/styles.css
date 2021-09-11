@@ -208,6 +208,19 @@ body .loader .spinner {
 .restaurants .legend .coeur {
   font-size: 24px;
   justify-self: center;
+  width: 24px;
+  height: 24px;
+}
+.restaurants .legend .coeur path {
+  fill: transparent;
+  stroke: black;
+  stroke-width: 30;
+  transform-origin: bottom;
+}
+.restaurants .legend .coeur path:hover {
+  fill: #FF79DA;
+  stroke: #FF79DA;
+  transition: 1000ms;
 }
 
 @media only screen and (min-width: 1080px) {
