@@ -44,10 +44,28 @@ li {
 
 @keyframes apparition {
   0% {
+    transform: translateX(-9999px);
     opacity: 0;
   }
   100% {
+    transform: translateX(0);
     opacity: 1;
+  }
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes disparition {
+  40% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
   }
 }
 .contener {
